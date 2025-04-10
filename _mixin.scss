@@ -1,0 +1,15 @@
+@mixin absolute-el ($top, $left, $right, $bottom, $x, $y) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+  transform: translate($x,$y);
+}
+
+// pseudo el
+@mixin peuso-el ($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
